@@ -2,6 +2,24 @@
 # yarn lockfile v1
 
 
+"@angular-architects/module-federation-runtime@^12.2.0":
+  version "12.2.0"
+  resolved "https://registry.yarnpkg.com/@angular-architects/module-federation-runtime/-/module-federation-runtime-12.2.0.tgz#eb50744acdaca344dfbd803fa399ffd4d4656f87"
+  integrity sha512-lPUKd2N8MbZ4w0Sq3eS0o49cLTElsPslwlIu+YNxGBUDabnwjUChrYWISMjR7ojhDV1lv4Ed+XZGP1b82/ufiw==
+  dependencies:
+    tslib "^2.0.0"
+
+"@angular-architects/module-federation@12.2.1":
+  version "12.2.1"
+  resolved "https://registry.yarnpkg.com/@angular-architects/module-federation/-/module-federation-12.2.1.tgz#018dcbf6205084b9044bfa433d35df3e143c456d"
+  integrity sha512-168OVnOl9H3QJmFYlIraYVwbKTYYoKBCIYxEMVj2vt0XN6awPNdqqpp9E2nAFJBAhqORltiEgHsSBQimQUYIkg==
+  dependencies:
+    "@angular-architects/module-federation-runtime" "^12.2.0"
+    callsite "^1.0.0"
+    ngx-build-plus "^12.0.0"
+    rxjs "~6.6.3"
+    word-wrap "^1.2.3"
+
 "@angular-devkit/architect@0.1201.1":
   version "0.1201.1"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1201.1.tgz#a1cb4e25c53bfc388134f53f5f1d7c5884f0b2c8"
@@ -1209,7 +1227,7 @@
     node-gyp "^7.1.0"
     read-package-json-fast "^2.0.1"
 
-"@schematics/angular@12.1.1":
+"@schematics/angular@12.1.1", "@schematics/angular@^12.0.0":
   version "12.1.1"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-12.1.1.tgz#e0e0d909cb641f808fa04fd1567e1f06c3676923"
   integrity sha512-ukSKoAWfXt28TiHlRrEzKFW63V3jroRF3xnBKtsaL3AZ4MVJiHzOWXkzDAZBaEOLUH/l6Xhm64NMgOqMEAg1rQ==
@@ -1475,7 +1493,7 @@ accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
-acorn@^8.2.1:
+acorn@^8.4.1:
   version "8.4.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.4.1.tgz#56c36251fc7cabc7096adc18f05afe814321a28c"
   integrity sha512-asabaBSkEKosYKMITunzX177CXxQ4Q8BSSzMTKD+FefUhipQC70gfW5SiUDhYQ3vk8G+81HqQk7Fv9OXwwn9KA==
@@ -2033,6 +2051,11 @@ call-bind@^1.0.0, call-bind@^1.0.2:
   dependencies:
     function-bind "^1.1.1"
     get-intrinsic "^1.0.2"
+
+callsite@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/callsite/-/callsite-1.0.0.tgz#280398e5d664bd74038b6f0905153e6e8af1bc20"
+  integrity sha1-KAOY5dZkvXQDi28JBRU+borxvCA=
 
 callsites@^3.0.0:
   version "3.1.0"
@@ -4438,10 +4461,10 @@ less@4.1.1:
     needle "^2.5.2"
     source-map "~0.6.0"
 
-license-webpack-plugin@2.3.19:
-  version "2.3.19"
-  resolved "https://registry.yarnpkg.com/license-webpack-plugin/-/license-webpack-plugin-2.3.19.tgz#f02720b2b0bcd9ae27fb63f0bd908d9ac9335d6c"
-  integrity sha512-z/izhwFRYHs1sCrDgrTUsNJpd+Xsd06OcFWSwHz/TiZygm5ucweVZi1Hu14Rf6tOj/XAl1Ebyc7GW6ZyyINyWA==
+license-webpack-plugin@2.3.17, license-webpack-plugin@2.3.19:
+  version "2.3.17"
+  resolved "https://registry.yarnpkg.com/license-webpack-plugin/-/license-webpack-plugin-2.3.17.tgz#75d05d8b2c3f223be8988d144e9739df8f502319"
+  integrity sha512-4jJ5/oIkhylMw2EjXh9sxPP8KC3FYBjTcxOCoTIaC2J/zVbJhfw992UEpSsov8VTt97XtU+xJyE4cJn4gHB2PA==
   dependencies:
     "@types/webpack-sources" "^0.1.5"
     webpack-sources "^1.2.0"
@@ -4913,6 +4936,14 @@ neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
+
+ngx-build-plus@^12.0.0:
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/ngx-build-plus/-/ngx-build-plus-12.0.1.tgz#3cd5da9fd91d6fdc1d86ab6c7c5bef5c24c2ae78"
+  integrity sha512-eq4D66yK3iEWuGKn/0Mh0CEfO8zzc17ZZLMpN/tFIcDEcGwFCHs8absQRAc90kBNsxIXQxPqjxUDXdISfFKGRw==
+  dependencies:
+    "@schematics/angular" "^12.0.0"
+    webpack-merge "^5.0.0"
 
 nice-try@^1.0.4:
   version "1.0.5"
@@ -6430,7 +6461,7 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-rxjs@6.6.7, rxjs@^6.6.6, rxjs@~6.6.0:
+rxjs@6.6.7, rxjs@^6.6.6, rxjs@~6.6.0, rxjs@~6.6.3:
   version "6.6.7"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
   integrity sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==
@@ -7523,7 +7554,7 @@ webpack-log@^2.0.0:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
 
-webpack-merge@5.8.0:
+webpack-merge@5.8.0, webpack-merge@^5.0.0:
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-5.8.0.tgz#2b39dbf22af87776ad744c390223731d30a68f61"
   integrity sha512-/SaI7xY0831XwP6kzuwhKWVKDP9t1QY1h65lAFLbZqMPIuYcD9QAW4u9STIbU9kaJbPBB/geU/gLr1wDjOhQ+Q==
@@ -7554,17 +7585,17 @@ webpack-subresource-integrity@1.5.2:
   dependencies:
     webpack-sources "^1.3.0"
 
-webpack@5.41.1:
-  version "5.41.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.41.1.tgz#23fa1d82c95c222d3fc3163806b9a833fe52b253"
-  integrity sha512-AJZIIsqJ/MVTmegEq9Tlw5mk5EHdGiJbDdz9qP15vmUH+oxI1FdWcL0E9EO8K/zKaRPWqEs7G/OPxq1P61u5Ug==
+webpack@5.41.1, webpack@^5.4.0:
+  version "5.42.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.42.1.tgz#3347d0d93e79fe70bf62e51981024c80b9c8c3df"
+  integrity sha512-msikozzXrG2Hdx+dElq0fyNvxPFsaM2dKLc/l+xkMmhO/1qwVJ9K9gY+fi/49MYWcpSP7alnK5Q78Evrd1LiqQ==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.48"
     "@webassemblyjs/ast" "1.11.0"
     "@webassemblyjs/wasm-edit" "1.11.0"
     "@webassemblyjs/wasm-parser" "1.11.0"
-    acorn "^8.2.1"
+    acorn "^8.4.1"
     browserslist "^4.14.5"
     chrome-trace-event "^1.0.2"
     enhanced-resolve "^5.8.0"
@@ -7627,6 +7658,11 @@ wildcard@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/wildcard/-/wildcard-2.0.0.tgz#a77d20e5200c6faaac979e4b3aadc7b3dd7f8fec"
   integrity sha512-JcKqAHLPxcdb9KM49dufGXn2x3ssnfjbcaQdLlfZsL9rH9wgDQjUtDxbo8NE0F6SFvydeu1VhZe7hZuHsB2/pw==
+
+word-wrap@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
+  integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
 
 wrap-ansi@^5.1.0:
   version "5.1.0"
